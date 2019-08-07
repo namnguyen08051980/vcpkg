@@ -26,9 +26,9 @@ pipeline {
             }
         }
         stage ('installx86') {
-            steps {
+           steps {
                 // bat "vcpkg.exe install boost:x86-windows"
-                //bat "vcpkg.exe install boost:x86-windows-static"
+                bat "vcpkg.exe install boost:x86-windows-static"
                 // bat "vcpkg.exe install libarchive:x86-windows"
                 bat "vcpkg.exe install libarchive:x86-windows-static"
                 // bat "vcpkg.exe install wtl:x86-windows"
